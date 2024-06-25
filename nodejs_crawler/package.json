@@ -1,0 +1,27 @@
+{
+  "name": "nodejs_crawler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -- --inspect index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "bull": "^3.29.3",
+    "connect-mongo": "^3.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.17.1",
+    "fs": "*",
+    "json2csv": "^5.0.1",
+    "lodash": "^4.17.20",
+    "moment": "^2.26.0",
+    "mongoose": "^5.9.19",
+    "playwright": "^1.22.2"
+  }
+}
