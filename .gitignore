@@ -1,2 +1,3 @@
 .env
 .vscode
+nodejs_crawler/node_modules
