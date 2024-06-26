@@ -18,28 +18,6 @@ const initBrowser = async () => {
 	}
 };
 
-const savePageContentToFile = (pageContent, query) => {
-	const fs = require("fs");
-	fs.writeFileSync(
-		`tmp/profile-${query || new Date().getTime()}.html`,
-		pageContent,
-		(err) =>
-			err ? console.error(err) : `new page content schema saved! @${query}`
-	);
-};
-
-const saveJsonToFile = (json, query) => {
-	const fs = require("fs");
-	fs.writeFileSync(
-		`tmp/${query || new Date().getTime()}.json`,
-		JSON.stringify(json),
-		(err) =>
-			err ? console.error(err) : `new page content schema saved! @${query}`
-	);
-};
-
 module.exports = {
 	initBrowser,
-	savePageContentToFile,
-	saveJsonToFile,
 };
